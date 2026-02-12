@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Pokédex</h1>
+            <p class="subtitle">Esplora tutti i Pokémon!</p>
+        </header>
+
+        <!-- Search and Filter Section -->
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cerca Pokémon per nome o numero...">
+                <button id="searchBtn">🔍 Cerca</button>
+            </div>
+            
+            <div class="filter-box">
+                <label for="typeFilter">Filtra per tipo:</label>
+                <select id="typeFilter">
+                    <option value="all">Tutti i tipi</option>
+                    <option value="normal">Normal</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="electric">Electric</option>
+                    <option value="grass">Grass</option>
+                    <option value="ice">Ice</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="poison">Poison</option>
+                    <option value="ground">Ground</option>
+                    <option value="flying">Flying</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="bug">Bug</option>
+                    <option value="rock">Rock</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="dark">Dark</option>
+                    <option value="steel">Steel</option>
+                    <option value="fairy">Fairy</option>
+                </select>
+            </div>
+
+            <div class="generation-box">
+                <label for="genFilter">Generazione:</label>
+                <select id="genFilter">
+                    <option value="all">Tutte</option>
+                    <option value="1">Gen 1 (1-151)</option>
+                    <option value="2">Gen 2 (152-251)</option>
+                    <option value="3">Gen 3 (252-386)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading">
+            <div class="pokeball-loader"></div>
+            <p>Caricamento Pokémon...</p>
+        </div>
+
+        <!-- Pokemon Grid -->
+        <div id="pokemonGrid" class="pokemon-grid"></div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button id="prevBtn" class="page-btn">← Precedente</button>
+            <span id="pageInfo" class="page-info">Pagina 1</span>
+            <button id="nextBtn" class="page-btn">Successivo →</button>
+        </div>
+    </div>
+
+    <!-- Modal for Pokemon Details -->
+    <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody" class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Creato con ❤️ usando PokeAPI | Portfolio Project 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
