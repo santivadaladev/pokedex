@@ -19,11 +19,8 @@ Una moderna applicazione web Pokédex che utilizza la PokeAPI per visualizzare i
 
 ## 🚀 Demo Live
 
-[Vedi Demo](https://tuousername.github.io/pokedex) *(sostituisci con il tuo link GitHub Pages)*
+[Vedi Demo]([https://tuousername.github.io/pokedex](https://santivadaladev.github.io/pokedex/)) 
 
-## 📸 Screenshot
-
-*(Aggiungi qui degli screenshot della tua applicazione)*
 
 ## 🛠️ Tecnologie Utilizzate
 
@@ -46,31 +43,8 @@ Una moderna applicazione web Pokédex che utilizza la PokeAPI per visualizzare i
 1. Scarica tutti i file del progetto
 2. Apri `index.html` nel tuo browser
 
-### Metodo 2: Server Locale
-```bash
-# Con Python 3
-python -m http.server 8000
 
-# Con Node.js
-npx serve
 
-# Con Live Server (VS Code extension)
-# Click destro su index.html → "Open with Live Server"
-```
-
-Poi visita: `http://localhost:8000`
-
-## 🎯 Come Funziona
-
-### 1. Fetch dei Dati
-```javascript
-// Caricamento parallelo di 151 Pokémon (Gen 1)
-const promises = [];
-for (let i = 1; i <= 151; i++) {
-    promises.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}`));
-}
-const data = await Promise.all(promises);
-```
 
 ### 2. Filtraggio e Ricerca
 - Ricerca real-time per nome/numero
@@ -93,27 +67,7 @@ const data = await Promise.all(promises);
 ✅ **Performance**: Paginazione e lazy loading  
 ✅ **Code Organization**: Codice pulito e ben commentato  
 
-## 🎨 Features Tecniche
 
-### Paginazione Efficiente
-```javascript
-const startIndex = (currentPage - 1) * pokemonPerPage;
-const pokemonToDisplay = filteredPokemon.slice(startIndex, endIndex);
-```
-
-### Type-Based Styling
-```css
-.type-fire { background: #F08030; }
-.type-water { background: #6890F0; }
-/* 18 tipi con colori ufficiali */
-```
-
-### Loading State
-```javascript
-function showLoading(show) {
-    loading.classList.toggle('active', show);
-}
-```
 
 ## 🚧 Possibili Miglioramenti Futuri
 
@@ -136,11 +90,6 @@ pokedex/
 └── README.md          # Questa documentazione
 ```
 
-## 🌐 API Reference
-
-Questo progetto utilizza la [PokeAPI](https://pokeapi.co/):
-- `GET /pokemon/{id}` - Dettagli Pokémon
-- `GET /pokemon-species/{id}` - Descrizione e info specie
 
 ## 💡 Cosa Ho Imparato
 
@@ -151,23 +100,12 @@ Questo progetto utilizza la [PokeAPI](https://pokeapi.co/):
 - Gestione dello stato dell'applicazione senza framework
 - Design responsive con CSS Grid e Flexbox
 
-## 📝 Note per il CV
-
-**Descrizione Breve**:  
-*"Pokédex web app con ricerca, filtri e dettagli completi. Integrazione PokeAPI con fetch(), paginazione dinamica e design responsive. Vanilla JavaScript, CSS3 animations."*
 
 **Highlights**:
 - Integrazione REST API con gestione asincrona
 - UI/UX design con animazioni CSS
 - 386+ Pokémon caricati dinamicamente
 - Sistema di filtri e ricerca real-time
-
-## 👨‍💻 Autore
-
-**Il Tuo Nome**
-- Portfolio: [tuosito.com](https://tuosito.com)
-- GitHub: [@tuousername](https://github.com/tuousername)
-- LinkedIn: [tuo-profilo](https://linkedin.com/in/tuo-profilo)
 
 ## 📄 Licenza
 
