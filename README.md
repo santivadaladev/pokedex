@@ -19,7 +19,7 @@ Una moderna applicazione web Pokédex che utilizza la PokeAPI per visualizzare i
 
 ## 🚀 Demo Live
 
-[Vedi Demo]([https://tuousername.github.io/pokedex](https://santivadaladev.github.io/pokedex/)) 
+[Vedi Demo] (https://santivadaladev.github.io/pokedex/) 
 
 
 ## 🛠️ Tecnologie Utilizzate
